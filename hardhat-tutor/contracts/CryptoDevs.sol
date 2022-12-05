@@ -23,3 +23,9 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
 
     // total number of tokenIds minted
     uint256 public tokenIds;
+
+     // Whitelist contract instance
+    IWhitelist whitelist;
+
+    // boolean to keep track of whether presale started or not
+    bool public presaleStarted;
