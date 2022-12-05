@@ -17,3 +17,9 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
 
     // _paused is used to pause the contract in case of an emergency
     bool public _paused;
+
+    // max number of CryptoDevs
+    uint256 public maxTokenIds = 20;
+
+    // total number of tokenIds minted
+    uint256 public tokenIds;
