@@ -37,3 +37,11 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
         require(!_paused, "Contract currently paused");
         _;
     }
+      /**
+      * @dev ERC721 constructor takes in a `name` and a `symbol` to the token collection.
+      * name in our case is `Crypto Devs` and symbol is `CD`.
+      * Constructor for Crypto Devs takes in the baseURI to set _baseTokenURI for the collection.
+      * It also initializes an instance of whitelist interface.
+      */
+
+      
