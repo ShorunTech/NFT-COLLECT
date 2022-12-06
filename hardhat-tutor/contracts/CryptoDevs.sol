@@ -108,4 +108,9 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
         return _baseTokenURI;
     }
 
-      
+       /**
+        * @dev setPaused makes the contract paused or unpaused
+          */
+       function setPaused(bool val) public onlyOwner {
+        _paused = val;
+    }
