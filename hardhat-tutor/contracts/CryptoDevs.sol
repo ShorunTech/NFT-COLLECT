@@ -44,4 +44,10 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
       * It also initializes an instance of whitelist interface.
       */
 
+       constructor (string memory baseURI, address whitelistContract) ERC721("Crypto Devs", "CD") {
+        _baseTokenURI = baseURI;
+        whitelist = IWhitelist(whitelistContract);
+    }
+
+
       
