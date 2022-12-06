@@ -29,3 +29,11 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
 
     // boolean to keep track of whether presale started or not
     bool public presaleStarted;
+
+      // timestamp for when presale would end
+    uint256 public presaleEnded;
+
+    modifier onlyWhenNotPaused {
+        require(!_paused, "Contract currently paused");
+        _;
+    }
